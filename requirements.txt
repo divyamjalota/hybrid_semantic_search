@@ -1,0 +1,7 @@
+pandas
+streamlit
+transformers
+torch
+langchain-chroma
+langchain-community
+groq
