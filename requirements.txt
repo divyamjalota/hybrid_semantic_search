@@ -1,9 +1,5 @@
-pandas
-streamlit
-transformers
-torch
-langchain-community
-groq
+streamlit==1.35.0
+groq==0.6.0
 langchain-chroma==0.0.21
 chromadb==0.4.22
 pysqlite3-binary==0.5.3
