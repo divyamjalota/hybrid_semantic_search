@@ -22,7 +22,12 @@ def create_chroma_db(documents, db_path):
     # (Optional) Print a test embedding.
     print("Test query embedding:", embedding_function.embed_query("Test query"))
 
-    db = Chroma(embedding_function=embedding_function, persist_directory=db_path)
+    #db = Chroma(embedding_function=embedding_function, persist_directory=db_path)
+    db = Chroma(
+    persist_directory="./chroma_db",
+    embedding_function=embedding_function,
+    engine_args={"pool_pre_ping": True}  # Add this line
+)
     db.add_documents(documents)
     #db.persist()
     print("Chroma database populated successfully.")

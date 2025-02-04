@@ -2,6 +2,9 @@ pandas
 streamlit
 transformers
 torch
-langchain-chroma
 langchain-community
 groq
+langchain-chroma==0.0.21
+chromadb==0.4.22
+pysqlite3-binary==0.5.3
+sentence-transformers==2.6.0
